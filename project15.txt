@@ -1,0 +1,20 @@
+Project 15:
+
+In Project 11 you created a simple ATM program. However, the program was missing a lot of error check functionality.
+
+For example, the program wouldn’t work if you did something like this:
+
+a = Account.new
+a.account_holder = ‘Steve’
+a.deposit(‘$40.45’)
+
+Make a copy of Project 11 and then modify your ATM program to do the following:
+1. Allow for decimal values i.e. a.deposit(30.35)
+2. Allow for the user to put a dollar sign in front of the dollar amount i.e. a.deposit(‘$55.34’)
+3. Don’t allow the user to withdraw/transfer more money than is in the account
+4. Handle invalid input. i.e. a.deposit(‘cows’), a.account_holder=nil, a.withdraw(-55)
+
+Resources:
+
+Tips:
+
