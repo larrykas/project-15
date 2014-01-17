@@ -18,3 +18,9 @@ Resources:
 
 Tips:
 
+     if amount > @balance
+     begin
+       puts "Sorry You've got Insufficient Funds."
+       else
+         @balance -= amount 
+       end

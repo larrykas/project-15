@@ -9,8 +9,15 @@ class Account
      @balance += amount
    end
 
-   def withdraw(amount)
-     @balance -= amount
+   def withdraw(amount) 
+    if amount < @balance
+      begin 
+        @balance -= amount
+      rescue => e
+        puts e.class
+
+      end
+      
    end
  
    def balance
@@ -28,14 +35,14 @@ class Account
      return @balance
    end
  end
- a = Account.new(50, "Job", 01234)
- puts a.balance
  
  a = Account.new(50.51, "Hopkins", 012)
- a.deposit('$1.22')
- a.withdraw(5.80)
+ a.deposit(1.22)
+ a.withdraw(500.73)
  puts a.balance
+
 ############################################# 
 
 str = '$55.34'
-str.gsub(/[$]/, "").to_f 
+str.gsub(/[$]/, "").to_f
+end
