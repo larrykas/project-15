@@ -24,3 +24,14 @@ Tips:
        else
          @balance -= amount 
        end
+	   
+##################################################
+
+if amount < @balance
+  begin 
+    @balance -= amount
+  rescue => e
+    puts e.class
+
+  end	   
+	   
