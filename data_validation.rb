@@ -1,5 +1,5 @@
 class Account
-   attr_accessor :balance, :namee
+   attr_accessor :balance, :name
    
   def initialize(balance, name, account_number) 
     @balance = balance
@@ -74,7 +74,7 @@ class Account
          
          @balance -= amount
          
-         puts "You've Transfered $#{amount} To #{target_account}'s Account. Your Current Balance is $#{@balance}"
+         puts "You've Transfered $#{amount} To #{target_account.name}'s Account. Your Current Balance is $#{@balance}"
          
          elsif amount > @balance
          
