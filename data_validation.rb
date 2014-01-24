@@ -27,7 +27,7 @@ class Account
          
          else
          
-         puts "Deposit Error: Invalid Input For Deposit"
+           puts "Deposit Error: Invalid Input For Deposit"
          
      end
      
@@ -78,10 +78,10 @@ class Account
          
          elsif amount > @balance
          
-         puts "You Have Insufficient Balance. You Only Have $#{@balance} In Your Account"
+           puts "You Have Insufficient Balance. You Only Have $#{@balance} In Your Account"
          
          else
-         puts "Error: Invalid Input. Your Transaction Was Not Successful"
+           puts "Error: Invalid Input. Your Transaction Was Not Successful"
      end
    end
 
